@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - Oreo Cream Dream</title>
+    <title>Shop - Tres Leches</title>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -30,7 +30,7 @@
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
                 <div class="nav-svg">
-                    <a href="">
+                   <a href="./cart.html">
                         <i class="fa-solid fa-cart-shopping fa-2xl"></i>
                     </a>
                     <a href="">
@@ -54,15 +54,15 @@
         <div class="small-container single-product">
             <div class="row">
                 <div class="col-2">
-                    <img src="../images_v1/oreo cream dream.jpg" alt="" width="100%">
+                    <img src="../images/images_v1/Lemon and raspberry cake.png" alt="" width="100%">
                 </div>
                 <div class="col-2">
                     <p></p>
-                    <h1>Oreo Cream Dream</h1>
-                    <small>₵250/375/500</small>
-                    <p>Indulge in the Oreo Cream Dream Cake, a delightful fusion of rich chocolate cake and creamy Oreo filling. Topped with a luscious Oreo frosting and adorned with cookie crumbles, this cake is a heavenly treat for Oreo lovers, offering a perfect blend of crunch and cream in every bite.</p>
-                    <div class="order">
-                        <select>
+                    <h1>Raspberry cake</h1>
+                    <small>₵75</small>
+                    <p>Indulge in the decadence of our Raspberry cake, a luscious treat soaked in three types of milk for a moist, creamy texture. .</p>
+                   <div class="order">
+                        <select id="qty" >
                             <option>Select Quantity</option>
                             <option>1</option>
                             <option>2</option>
@@ -70,7 +70,15 @@
                             <option>4</option>
                             <option>5</option>
                         </select>
-                        <a href="#" class="btn">Add To Cart</a>
+                        <button  
+                            id="addToCartBtn10"
+                            data-name=" raspberry cake"
+                            data-category="Single Layer & Loaf Cakes"
+                            data-price="120"
+                            data-image="../images/images_v1/lemon & raspberry.jpg"
+                            class="addToCartBtn btn"
+                            name="add-to-cart"
+                            value="27545" href="#">Add To Cart</button> 
                     </div>
                     <a href="#" class="wish">
                         <svg xmlns="http://www.w3.org/2000/svg" class="qodef-wishlist-heart-svg" x="0px" y="0px"
@@ -82,7 +90,7 @@
                         Add To Wishlist
                     </a>
                     <div class="other-details">
-                        <h4>Product Code: <span>563</span></h4>
+                        <h4>Product Code: <span>362</span></h4>
                     </div>
                 </div>
             </div>
@@ -98,7 +106,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
-                    <a class="logo" href="../index.html">The Decadent Cake Lady</a>
+                    <a class="logo" href="../index.html">The Deacdent Cake Lady</a>
                     <p>Indulge In Sweet Treats</p>
                 </div>
                 <div class="footer-col-2">
@@ -130,6 +138,7 @@
             <p>&copy; 2023 The Deacdent Cake Lady. All rights reserved.</p>
         </footer></center>
     </footer>
+    <script src="../cart.js"></script>
 </body>
 
 </html>
