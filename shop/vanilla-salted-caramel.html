@@ -30,7 +30,7 @@
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
                 <div class="nav-svg">
-                    <a href="">
+                     <a href="./cart.html">
                         <i class="fa-solid fa-cart-shopping fa-2xl"></i>
                     </a>
                     <a href="">
@@ -54,15 +54,16 @@
         <div class="small-container single-product">
             <div class="row">
                 <div class="col-2">
-                    <img src="../images_v1/vanilla & salted Caramel.jpg" alt="" width="100%">
+                    <img src="../images/images_v1/vanilla & salted Caramel.jpg" alt="" width="100%">
                 </div>
-                <div class="col-2">
+
+                    <div class="col-2">
                     <p></p>
-                    <h1>Vanilla Salted Caramel</h1>
+                    <h1>Vanilla Salted Caramele</h1>
                     <small>₵250/375/500</small>
-                    <p>Indulge in our Vanilla Salted Caramel Cake, a perfect blend of classic vanilla layers and rich salted caramel. Topped with a smooth caramel drizzle and a hint of sea salt, this cake delivers a delightful balance of sweet and savory flavors, making it a crowd-pleasing favorite for any event.</p>
-                    <div class="order">
-                        <select>
+                    <p>Experience the ultimate chocolate indulgence with our Double Chocolate Cake. Rich, moist layers of chocolate cake are paired with a decadent chocolate ganache, creating a heavenly treat for chocolate lovers. Perfect for any occasion, this cake is a celebration of pure chocolate bliss.</p>
+                      <div class="order">
+                        <select id="qty" >
                             <option>Select Quantity</option>
                             <option>1</option>
                             <option>2</option>
@@ -70,7 +71,15 @@
                             <option>4</option>
                             <option>5</option>
                         </select>
-                        <a href="#" class="btn">Add To Cart</a>
+                        <button  
+                            id="addToCartBtn10"
+                            data-name="Vanilla Salted Caramel"
+                            data-category="Single Layer & Loaf Cakes"
+                            data-price="120"
+                            data-image="../images/images_v1/vanilla & salted Caramel.jpg"
+                            class="addToCartBtn btn"
+                            name="add-to-cart"
+                            value="27545" href="#">Add To Cart</button> 
                     </div>
                     <a href="#" class="wish">
                         <svg xmlns="http://www.w3.org/2000/svg" class="qodef-wishlist-heart-svg" x="0px" y="0px"
@@ -130,6 +139,7 @@
             <p>&copy; 2023 The Deacdent Cake Lady. All rights reserved.</p>
         </footer></center>
     </footer>
+    <script src="../cart.js"></script>
 </body>
 
 </html>

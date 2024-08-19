@@ -30,7 +30,7 @@
                     <li><a href="../contact.html">Contact</a></li>
                 </ul>
                 <div class="nav-svg">
-                    <a href="">
+                      <a href="./cart.html"></a>
                         <i class="fa-solid fa-cart-shopping fa-2xl"></i>
                     </a>
                     <a href="">
@@ -54,15 +54,15 @@
         <div class="small-container single-product">
             <div class="row">
                 <div class="col-2">
-                    <img src="../images_v1/Strawberry&Cream.jpg" alt="rubber plant" width="100%">
+                     <img src="../images/images_v1/strawberries and cream dream.jpg" alt="" width="100%">
                 </div>
                 <div class="col-2">
                     <p></p>
                     <h1>Strawberries & Cream Dream</h1>
                     <small>₵250/375/500</small>
-                    <p>Savor the sweetness of our Strawberry Cake, crafted with layers of moist, fluffy cake and luscious strawberry filling. Topped with fresh strawberries and a velvety cream, this delightful dessert offers a burst of fruity flavor in every bite, perfect for any celebration or sweet indulgence.</p>
+                    <p>Savor the sweetness of our Strawberry Cake, crafted with layers of moist, fluffy cake and luscious strawberry filling. </p>
                     <div class="order">
-                        <select>
+                        <select id="qty">
                             <option>Select Quantity</option>
                             <option>1</option>
                             <option>2</option>
@@ -70,7 +70,15 @@
                             <option>4</option>
                             <option>5</option>
                         </select>
-                        <a href="#" class="btn">Add To Cart</a>
+                        <button  
+                            id="addToCartBtn11"
+                            data-name="Strawberry cream dream"
+                            data-category="Single Layer & Loaf Cakes"
+                            data-price="120"
+                            data-image="../images/images_v1/strawberries and cream dream.jpg"
+                            class="addToCartBtn btn"
+                            name="add-to-cart"
+                            value="27545" href="#">Add To Cart</button> 
                     </div>
                     <a href="#" class="wish">
                         <svg xmlns="http://www.w3.org/2000/svg" class="qodef-wishlist-heart-svg" x="0px" y="0px"
@@ -130,6 +138,7 @@
             <p>&copy; 2023 The Deacdent Cake Lady. All rights reserved.</p>
         </footer></center>
     </footer>
+    <script src="../cart.js"></script>
 </body>
 
 </html>
