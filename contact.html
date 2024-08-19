@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - The Decadent Cake Lady</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <script src="app.js" defer></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images_v1/decadent-favicon.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <a class="logo" href="index.html">The Decadent Cake Lady</a>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="nav-svg">
+            <a href="">
+              <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+            </a>
+            <a href="">
+              <i class="fa-regular fa-heart fa-2xl"></i>
+            </a>
+            <a href="account.html">
+              <i class="fa-regular fa-user fa-2xl"></i>
+            </a>
+          </div>
+
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <h2>Let's get in touch</h2>
+            <p>We're open for any suggestion or just to have a chat</p>
+          </div>
+          <div class="contact-item">
+            <h3>Address:</h3>
+            <p>14 Third Cl, Accra</p>
+          </div>
+          <div class="contact-item">
+            <h3>Phone:</h3>
+            <p>+233-54-157-7707</p>
+          </div>
+          <div class="contact-item">
+            <h3>Email:</h3>
+            <p>
+              <a href="mailto:info@thedecadentcakelady.com"
+                >info@thedecadentcakelady.com</a
+              >
+            </p>
+          </div>
+          <div class="contact-item">
+            <h3>Website:</h3>
+            <p><a href="#">www.thedecadentcakelady.com</a></p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h2>Get in touch</h2>
+          <form name="contactform" action="contact.php" method="post">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" name="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <p>&copy; 2023 The Decadent Cake Lady. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script language="JavaScript">
+      var frmvalidator = new Validator("contactform");
+      frmvalidator.addValidation("name", "req", "Please provide your name");
+      frmvalidator.addValidation("email", "req", "Please provide your email");
+      frmvalidator.addValidation(
+        "email",
+        "email",
+        "Please enter a valid email address"
+      );
+      frmvalidator.addValidation("subject", "req", "Please provide a subject");
+      frmvalidator.addValidation("message", "req", "Please add a message");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - The Decadent Cake Lady</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images_v1/favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <a class="logo" href="index.html">The Decadent Cake Lady</a>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-svg">
+                    <a href="">
+                        <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-regular fa-heart fa-2xl"></i>
+                    </a>
+                    <a href="account.html">
+                        <i class="fa-regular fa-user fa-2xl"></i>
+                    </a>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ACCOUNT PAGE -->
+
+    <section class="account">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images_v1/decadent-favicon.jpg">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Sign Up</span>
+                            <hr id="Indicator">
+                        </div>
+                       
+                        <form id="RegForm">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="#"><code>Forgot Password?</code></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <a class="logo" href="index.html">Sadal</a>
+                    <p>Affordable and Best Furnitures </p>
+                </div>
+                <div class="footer-col-2">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="store_locator.html">Store Locator</a></li>
+                        <li><a href="return_policy.html">Return Policy</a></li>
+                        <li><a href="account.html">My Account</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Instgram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>     <center>
+            <p>&copy; 2023 The Decadent Cake Lady. All rights reserved.</p>
+        </footer></center>
+        
+    </footer>
+    <script>
+        // Get the login and register forms
+const loginForm = document.getElementById('LoginForm');
+const registerForm = document.getElementById('RegForm');
+
+// Add event listeners to the forms
+loginForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting
+
+  // Get the input values
+  const username = loginForm.querySelector('input[type="text"]').value;
+  const password = loginForm.querySelector('input[type="password"]').value;
+
+  // Check if all fields are filled
+  if (username.trim() === '' || password.trim() === '') {
+    alert('Please fill in all the fields.');
+  } else {
+    // Submit the form or perform other actions
+    alert('Login successful!');
+  }
+});
+
+registerForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting
+
+  // Get the input values
+  const username = registerForm.querySelector('input[type="text"]').value;
+  const email = registerForm.querySelector('input[type="email"]').value;
+  const password = registerForm.querySelector('input[type="password"]').value;
+
+  // Check if all fields are filled
+  if (username.trim() === '' || email.trim() === '' || password.trim() === '') {
+    alert('Please fill in all the fields.');
+  } else {
+    // Submit the form or perform other actions
+    alert('Registration successful!');
+  }
+});
+    </script>
+</body>
+
+</html>
