@@ -772,3 +772,9 @@ form a {
     display: none;
   }
 }
+
+.cake-thumb {
+  width: 258px;
+  height: 368px;
+  object-fit: cover;
+}
